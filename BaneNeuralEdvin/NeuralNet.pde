@@ -7,7 +7,7 @@ class NeuralNet {
       if (i < 8) {
         vaegt[i] = weights[i];
       } else {
-        bias[i-8] = biass[i];
+        bias[i-8] = biass[i-8];
       }
     }
   }

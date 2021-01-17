@@ -14,11 +14,11 @@ void draw() {
   bilSystemet.run(); //kører alting for bilerne der skal køres
 
   fill(255);
-  text("Press 'space' for a new generation made by the winners",250,320); //forklaringstekst til brugeren
+  text("Press 'space' for a new generation made by the winners", 250, 320); //forklaringstekst til brugeren
 }
 
-void keyPressed(){
-  if (key == ' '){ //gør en kommando når du trykker "space"
+void keyPressed() {
+  if (key == ' ' && contenders.size() > 0) { //gør en kommando når du trykker "space" og når der er mindst 1 vinder
     bilSystemet.nextgeneration(); //funktion der sletter alle de gamle biler og laver 200 nye biler af vinderenes gener
   }
 }
